@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistem Akademik Cloud</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <h2>Cloud Academic</h2>
+      <a href="#layanan">Layanan</a>
+      <a href="#data">Data</a>
+      <a href="#cloud">Cloud</a>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Sistem Akademik Universitas Berbasis Cloud</h1>
+      <p>Website sederhana untuk implementasi UAS Cloud Computing menggunakan Microsoft Azure Static Web Apps.</p>
+      <button onclick="showInfo()">Cek Status Sistem</button>
+      <p id="status"></p>
+    </div>
+  </header>
+
+  <main>
+    <section id="layanan" class="card-section">
+      <h2>Layanan Sistem</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Data Mahasiswa</h3>
+          <p>Mengelola identitas mahasiswa, NIM, program studi, dan status akademik.</p>
+        </div>
+        <div class="card">
+          <h3>KRS Online</h3>
+          <p>Membantu mahasiswa memilih mata kuliah secara digital.</p>
+        </div>
+        <div class="card">
+          <h3>KHS Online</h3>
+          <p>Menampilkan nilai dan hasil studi mahasiswa setiap semester.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="data" class="table-section">
+      <h2>Contoh Data Mahasiswa</h2>
+      <table>
+        <tr>
+          <th>NIM</th>
+          <th>Nama</th>
+          <th>Program Studi</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>2023001</td>
+          <td>Zafnat Paaneah Matusal</td>
+          <td>Teknik Informatika</td>
+          <td>Aktif</td>
+        </tr>
+        <tr>
+          <td>2023002</td>
+          <td>Mahasiswa Contoh</td>
+          <td>Sistem Informasi</td>
+          <td>Aktif</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="cloud" class="cloud-section">
+      <h2>Implementasi Cloud</h2>
+      <p>
+        Website ini dirancang sebagai frontend sistem akademik yang berjalan pada Microsoft Azure Static Web Apps.
+        Pada rancangan penuh, sistem dapat dikembangkan dengan Azure SQL Database, Azure Blob Storage, Azure Functions, dan Azure Monitor.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>UAS Cloud Computing 2025/2026 | Microsoft Azure</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

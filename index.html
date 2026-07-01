@@ -11,15 +11,19 @@
     <nav>
       <h2>Cloud Academic</h2>
       <a href="#layanan">Layanan</a>
-      <a href="#data">Data</a>
+      <a href="#data">Mahasiswa</a>
+      <a href="#matakuliah">Mata Kuliah</a>
       <a href="#cloud">Cloud</a>
     </nav>
 
     <div class="hero-content">
       <h1>Sistem Akademik Universitas Berbasis Cloud</h1>
-      <p>Website sederhana untuk implementasi UAS Cloud Computing menggunakan Microsoft Azure Static Web Apps.</p>
+      <p>
+        Website sederhana untuk implementasi UAS Cloud Computing menggunakan
+        Microsoft Azure Static Web Apps dan Azure Functions.
+      </p>
       <button onclick="showInfo()">Cek Status Sistem</button>
-      <p id="status"></p>
+      <p id="status">Status sistem akan tampil dari Azure Functions API.</p>
     </div>
   </header>
 
@@ -43,34 +47,39 @@
     </section>
 
     <section id="data" class="table-section">
-      <h2>Contoh Data Mahasiswa</h2>
+      <h2>Data Mahasiswa dari Serverless API</h2>
       <table>
-        <tr>
-          <th>NIM</th>
-          <th>Nama</th>
-          <th>Program Studi</th>
-          <th>Status</th>
-        </tr>
-        <tr>
-          <td>2023001</td>
-          <td>Zafnat Paaneah Matusal</td>
-          <td>Teknik Informatika</td>
-          <td>Aktif</td>
-        </tr>
-        <tr>
-          <td>2023002</td>
-          <td>Mahasiswa Contoh</td>
-          <td>Sistem Informasi</td>
-          <td>Aktif</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Program Studi</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="mahasiswa-body">
+          <tr>
+            <td colspan="4">Memuat data mahasiswa dari Azure Functions...</td>
+          </tr>
+        </tbody>
       </table>
+    </section>
+
+    <section id="matakuliah" class="card-section">
+      <h2>Data Mata Kuliah dari Serverless API</h2>
+      <div id="matakuliah-list" class="grid">
+        <div class="card">
+          <p>Memuat data mata kuliah dari Azure Functions...</p>
+        </div>
+      </div>
     </section>
 
     <section id="cloud" class="cloud-section">
       <h2>Implementasi Cloud</h2>
       <p>
-        Website ini dirancang sebagai frontend sistem akademik yang berjalan pada Microsoft Azure Static Web Apps.
-        Pada rancangan penuh, sistem dapat dikembangkan dengan Azure SQL Database, Azure Blob Storage, Azure Functions, dan Azure Monitor.
+        Website ini berjalan menggunakan Microsoft Azure Static Web Apps.
+        Backend sederhana dibuat menggunakan Azure Functions sebagai layanan serverless.
+        Penyimpanan dokumen akademik dibuat menggunakan Azure Blob Storage.
       </p>
     </section>
   </main>

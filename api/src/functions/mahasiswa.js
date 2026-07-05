@@ -14,7 +14,7 @@ app.http("mahasiswa", {
         },
         {
           nim: "2023002",
-          nama: "Alvey Reza Pahlevi",
+          nama: "Zidane",
           prodi: "Sistem Informasi",
           status: "Aktif"
         }
